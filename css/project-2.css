@@ -1,3 +1,10 @@
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 :root {
 
     --background-color:#F5F2D6;
@@ -11,7 +18,7 @@
     font-style: normal;
     background-color: var(--background-color);
     margin: 1em;
-    font-size: 18px;
+    font-size: 20px;
       }      
 
   
@@ -21,17 +28,20 @@
   }
   
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 300;
+    font-weight: 400;
   }
   
   h2 {
     font-size: 1.5em;
     font-weight: 300;
+    font-family: "Special Elite";
   }
   
   h2, h3, h4 {
     font-weight: 600;
+    font-family: "Special Elite";
   }
   
   .container {
@@ -45,7 +55,6 @@
     justify-content: flex-end;
     align-items: center;
     padding: 1em 2em;
-    background-color: var(--light-color);
     color: var(--dark-color);
     margin-bottom: 1em;
   }
@@ -53,7 +62,7 @@
   masthead h1 {
     margin-right: auto;
     font-weight: 600;
-    color: red;
+    color: #950047;
     font-family: "Lily Script One";
     margin: 0 auto 0 0;
   }
@@ -80,6 +89,7 @@
     text-decoration: none;
     color: var(--dark-color);
     transition: all 0.3s ease 0s;
+    
   }
   
   masthead a:hover {
@@ -121,7 +131,7 @@
 
 .tutorial-box {
   border-radius: 25px;
-  background-color: bisque;
+  background-color: rgb(251, 247, 240);
   h2 {
     padding: 1em;
     border-top-left-radius: 25px;
