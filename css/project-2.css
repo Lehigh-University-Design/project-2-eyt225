@@ -48,13 +48,13 @@
     background-color: var(--light-color);
     color: var(--dark-color);
     margin-bottom: 1em;
-    
   }
   
   masthead h1 {
     margin-right: auto;
     font-weight: 600;
-    font-family: lily;
+    color: red;
+    font-family: "Lily Script One";
     margin: 0 auto 0 0;
   }
   
@@ -88,53 +88,54 @@
   
   /* main */
   
-  #content {
+#content {
+  border-radius: 25px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2em;
+  margin-bottom: 0;
+  padding: 2em;
+}
+
+.description {
+
+}
+
+.media {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.tutorial-box-holder{
+  margin-bottom: 0;
+  padding: 2em;
+}
+
+.tutorial-box {
+  border-radius: 25px;
+  background-color: bisque;
+  h2 {
+    padding: 1em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: var(--background-color);
+  }
+  .how-to {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 2em;
-    margin-bottom: 1em;
-    background-color: var(--light-color);
-    color: var(--dark-color);
-    padding: 2em;
-    
-  }
-  
-  .post {
-    margin-bottom: 1em;
-    .img-container {
-      aspect-ratio: 1/1;
-    }
-    .post-stuff {
-      display: flex;
-      align-items: flex-start;
-    }
-    p {
-      margin-top: 0;
-    }
-    img {
-      width: 33%;
-      height: auto;
-      display: block;
-      margin-right: 1em;
-    }
-  }
-  
-  .big-post {
-    border:1px solid var(--light-color);
-    margin-bottom: 1em;
-    .img-container {
-      aspect-ratio: 4/3;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  }
-  
-  .post:last-child, .big-post:last-child {
     margin-bottom: 0;
+    padding: 2em;
   }
+}
   
   /* media queries */
   @media only screen and (max-width: 768px) {
@@ -157,16 +158,15 @@
       margin-right: 0;
     }
   
-    #content {
+    .section {
       padding: 1em;
       gap: 1em;
       grid-template-columns: 1fr;
     }
-    .main {
+    .media {
       order: 1;
     }
-    .sidebar {
+    .description {
       order: 2;
     }
-  
   }
