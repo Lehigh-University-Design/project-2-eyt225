@@ -113,7 +113,9 @@
 }
 
 .description {
-
+  gap: 2em;
+  margin-bottom: 0;
+  padding: 2em;
 }
 
 .media {
@@ -131,12 +133,12 @@
 
 .tutorial-box {
   border-radius: 25px;
-  background-color: rgb(251, 247, 240);
+  background-color: var(--background-color);
   h2 {
     padding: 1em;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background-color: var(--background-color);
+    background-color: #d6cc6d;
   }
   .how-to {
     display: grid;
